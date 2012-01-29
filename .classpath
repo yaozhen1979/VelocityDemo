@@ -6,9 +6,11 @@
 	<classpathentry kind="lib" path="lib/avalon-logkit-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
-	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2.12.jar"/>
 	<classpathentry kind="lib" path="lib/oro-2.0.8.jar"/>
 	<classpathentry kind="lib" path="lib/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
