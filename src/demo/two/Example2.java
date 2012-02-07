@@ -10,12 +10,18 @@ import java.io.StringWriter;
 
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Example2 {
+	
+	private static final Logger logger = LoggerFactory
+		.getLogger(Example2.class);
+	
 	public static void main(String args[]) {
 		
 		/* first, we init the runtime engine. Defaults are fine. */
-		Velocity.init();
+		Velocity.init("logback.xml");
 
 		/* lets make a Context and put data into it */
 		VelocityContext context = new VelocityContext();
@@ -28,7 +34,9 @@ public class Example2 {
 		
 		// 加入語系參數
 		Velocity.mergeTemplate("testtemplate.vm","UTF-8", context, w);
-		System.out.println(" template : " + w);
+		//System.out.println(" template : " + w);
+		
+		logger.trace("TEST DEMO:\n{}", w.toString());
 
 		/* lets make our own string to render */
 //		String s = "We are using $project $name to render this.";
